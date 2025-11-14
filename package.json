@@ -2,10 +2,11 @@
   "name": "node-js-portfolio-website",
   "version": "1.0.0",
   "description": "A modern portfolio website built with Node.js, Express, and Tailwind CSS",
-  "main": "server.js",
+  "main": "dist/server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon --exec ts-node server.ts",
     "build:css": "tailwindcss -i ./public/css/input.css -o ./public/css/output.css --minify"
   },
   "keywords": [
@@ -25,7 +26,11 @@
     "tailwindcss": "^3.4.0"
   },
   "devDependencies": {
-    "nodemon": "^3.0.2"
+    "@types/express": "^5.0.5",
+    "@types/express-ejs-layouts": "^2.5.4",
+    "@types/node": "^24.10.1",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }
-
