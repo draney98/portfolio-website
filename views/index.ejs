@@ -1,10 +1,10 @@
 <!-- Hero Section -->
-<section class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-20">
+<section class="bg-gradient-to-r from-orange-600 to-amber-600 text-white py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
             <h1 class="text-4xl md:text-6xl font-bold mb-6">Welcome to My Portfolio</h1>
-            <p class="text-xl md:text-2xl mb-8 text-indigo-100">Showcasing my web development projects and skills</p>
-            <a href="/projects" class="inline-block bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-indigo-50 transition duration-300">
+            <p class="text-xl md:text-2xl mb-8 text-orange-100">Showcasing my web development projects and skills</p>
+            <a href="/projects" class="inline-block bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-orange-50 transition duration-300">
                 View My Work
             </a>
         </div>
@@ -26,16 +26,16 @@
                     <p class="text-gray-600 mb-4"><%= project.description %></p>
                     <div class="flex flex-wrap gap-2 mb-4">
                         <% project.technologies.forEach(tech => { %>
-                        <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded"><%= tech %></span>
+                        <span class="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded"><%= tech %></span>
                         <% }); %>
                     </div>
-                    <a href="<%= project.link %>" class="text-indigo-600 hover:text-indigo-800 font-medium">View Project →</a>
+                    <a href="<%= project.link %>" class="text-orange-600 hover:text-orange-800 font-medium">View Project →</a>
                 </div>
             </div>
             <% }); %>
         </div>
         <div class="text-center mt-12">
-            <a href="/projects" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300">
+            <a href="/projects" class="inline-block bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-700 transition duration-300">
                 View All Projects
             </a>
         </div>
@@ -51,7 +51,7 @@
                 I'm a web developer passionate about creating beautiful and functional web experiences. 
                 I specialize in modern web technologies and love turning complex problems into simple, elegant solutions.
             </p>
-            <a href="/about" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300">
+            <a href="/about" class="inline-block bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-700 transition duration-300">
                 Learn More
             </a>
         </div>
